@@ -1,0 +1,186 @@
+$color_black : black;
+$second_color : White;
+$third_color : #737373;
+$fourth_color : rgb(211, 211, 211);
+
+@mixin boxshadow {
+    box-shadow: 0px 0px 9px 5px rgba(136,136,136,0.3);
+        -webkit-box-shadow: 0px 0px 9px 5px rgba(136,136,136,0.3);
+        -moz-box-shadow: 0px 0px 9px 5px rgba(136,136,136,0.3);
+  }
+
+
+
+body {
+    background-color: #fafbfb;
+}
+.connect{
+
+        text-align: center;
+        width: 70%;
+        margin: 0 auto;
+        padding: 70px 0;
+    h3{
+        color: $color_black;
+        font-size: 40px;
+        font-weight: 400;
+    }
+
+    h5{
+        color: $third_color;
+        font-weight:400;
+    }
+    .emailform {
+        background-color: $second_color;
+        padding:40px 40px 20px;
+        @include boxshadow;
+        
+        &_inner {
+            height: 50px;
+            border-radius: 0px !important;
+        }
+
+        button {
+            height: 50px;
+            font-weight: 600;
+            color: $second_color;
+            border-radius: 0px !important;
+        }
+        p {
+            text-align: left;
+            padding-top:10px;
+            color: #9c9c9c;
+        }
+        a {
+            border-bottom:1px dashed #d3d3d3;
+        }
+    }
+}
+.domainSeach {
+    width: 60%;
+    margin: 0px auto;
+    text-align: center;
+    padding: 50px;
+    h5 {
+        color: #888;
+        font-size: 14px;
+        font-weight: 700;
+        margin-bottom: 12px;
+        text-transform: uppercase;
+    }
+    h3 {
+        color: #191919;
+        display: inline-block;
+        font-size: 17px;
+        font-weight: 600;
+        margin: 0 0 12px;
+    }
+    p {
+        font-size: 16px;
+        line-height: 26px;
+        margin: 0;
+    }
+    a {
+        color: #168eea;
+        display: inline-block;
+        font-size: 16px;
+        margin-top: 10px;
+        text-decoration: none;
+    }
+}
+
+.emailOption {
+    padding: 60px 20px;
+    .emailOptionFind {
+        padding: 10px 20px;
+    }    
+    h5 {
+        color: #888;
+        font-size: 14px;
+        font-weight: 700;
+        margin-bottom: 12px;
+        text-transform: uppercase;
+    }
+    h3 {
+        color: #191919;
+        display: inline-block;
+        font-size: 17px;
+        font-weight: 600;
+        margin: 0 0 12px;
+    }
+    p {
+        font-size: 16px;
+        line-height: 26px;
+        margin: 0;
+    }
+    a {
+        color: #168eea;
+        display: inline-block;
+        font-size: 16px;
+        margin-top: 10px;
+        text-decoration: none;
+    }
+}
+.transparency {
+    background-image: url(https://hunter.io/packs/media/images/51bc4fd355e3af6cf68f.jpg);
+    background-position: center;
+    padding: 100px 0px;
+    background-size: 700px;
+    background-repeat: no-repeat;
+    h3 {
+        color: $color_black;
+        font-size: 36px;
+        font-weight: 500;
+        margin: 0 0 30px;
+        text-align: center;
+    }
+    p {
+        margin: 0 auto 30px;
+        max-width: 700px;
+        font-size: 19px;
+        color:rgb(112, 112, 112);
+    }
+    button {
+        padding: 10px 20px;
+    }
+}
+footer {
+    background-color:$color_black;
+    padding: 90px;
+    text-align: center;
+    .footerText {
+        font-size: 14px;
+    }
+    .footerList {
+        font-size:13px;
+    }
+}
+
+
+@media only screen and (max-width:476px) {
+    .connect {
+        width:100% !important;
+    }
+    .connect .emailform {
+        background-color: White;
+        padding: 40px 15px 20px;
+    }
+}
+@media only screen and (max-width:576px) {
+    .connect {
+        width:100% !important;
+    }
+    .connect .emailform {
+        background-color: White;
+        padding: 40px 15px 20px;
+    }
+}
+@media only screen and (max-width:768px) {
+    .connect {
+        width:100% !important;
+    }
+    .connect .emailform {
+        background-color: White;
+        padding: 40px 15px 20px;
+    }
+}
